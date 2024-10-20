@@ -1,0 +1,91 @@
+body {
+    background-color:#1d1d1d;
+    color: #cacaca;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+nav{
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    justify-content: flex-end; 
+    font-size: 40px;
+}
+
+a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 37px;
+    color: rgb(22, 39, 193) ;
+}
+
+a:hover{
+    text-decoration: solid;
+    font-size: 19px;
+}
+a:visited{
+    color: rgb(66, 73, 146);
+}
+h3,h2{
+    font-weight: bold;
+}
+
+.bodynav {
+    display: flex;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-size-adjust: auto;
+    justify-content: flex-start;   
+}
+.container{
+    display: flex;
+    align-items: center; /* Vertically aligns items */
+}
+
+img, i{
+    max-width: 300px; /* Adjust the width of the image */
+    margin-right: 20px; /* Add some space between the image and the text */
+    border-radius: 10px; /* Optional: give the image rounded corners */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    flex-wrap: wrap; /* Allows images to wrap to the next line if necessary */
+}
+img[src="movie23.jpg"], img[src="movie24.jpg"], img[src="movie25.jpg"], img[src="movie22.jpg"]{
+    margin: 10px; /* Space between images */
+    width: auto; /* Set a fixed width for images */
+    height: 190px; /* Maintain aspect ratio */
+}
+
+img[src="chracters.jpg"]{
+    max-height: 335px;
+}
+.longp {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #2e2e2e;
+    color: #cacaca;
+    padding: 40px;
+    border-radius: 20px / 20px;
+    border: 2px solid #cacaca61;
+}
+
+tr:nth-child(even) {
+    background-color: #282828;
+}
+
+tr:nth-child(odd) {
+    background-color: #222222;
+}
+table{
+    border-radius: 15px;
+    align-items: normal ;
+}
+tr:hover {
+    background-color: #666569;
+}

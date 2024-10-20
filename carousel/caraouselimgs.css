@@ -1,0 +1,57 @@
+/* Ensure the body takes up full height and centers the content */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Carousel container */
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    height: 400px; /* Make sure there’s a height set */
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    background-color: #000; /* For visibility */
+}
+
+/* Carousel items (absolute positioning for stacking) */
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Display each image in sequence using keyframes */
+.carousel-item:nth-child(1) {
+    animation: fade 9s infinite;
+}
+
+.carousel-item:nth-child(2) {
+    animation: fade 9s infinite 3s;
+}
+
+.carousel-item:nth-child(3) {
+    animation: fade 9s infinite 6s;
+}
+
+/* Keyframe animation for fading in/out */
+@keyframes fade {
+    0%, 100% { opacity: 0; }
+    10%, 33% { opacity: 1; }
+}
+
+/* Image styling */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the full container */
+    display: block;
+}
